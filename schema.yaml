@@ -1,0 +1,21 @@
+COLUMNS:
+  Have_IP: int64
+  Have_At: int64
+  URL_Length: int64
+  URL_Depth: int64
+  Redirection: int64
+  https_Domain: int64
+  TinyURL: int64
+  Prefix/Suffix: int64
+  DNS_Record: int64
+  Web_Traffic: int64
+  Domain_Age: int64
+  Domain_End: int64
+  iFrame: int64
+  Mouse_Over: int64
+  Right_Click: int64
+  Web_Forwards: int64
+
+TARGET_COLUMN:
+  name: Label
+  

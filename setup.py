@@ -5,9 +5,9 @@ with open("README.md","r",encoding="utf-8") as f:
 
 __version__="0.0.0"
 
-REPO_NAME="Next-Word-Predictor"
+REPO_NAME="Phishing-Classifer"
 AUTHOR_USER_NAME="suzalkachhadiya"
-SRC_REPO="NWPproject"
+SRC_REPO="Phishingproject"
 
 setuptools.setup(
     name=SRC_REPO,

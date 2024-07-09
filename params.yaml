@@ -1,0 +1,5 @@
+RandomForestClassifier:
+  criterion: 'gini'
+  max_depth: 10
+  n_estimators: 150
+  oob_score: True
