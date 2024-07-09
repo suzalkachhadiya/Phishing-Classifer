@@ -1,4 +1,5 @@
 COLUMNS:
+  Domain: str
   Have_IP: int64
   Have_At: int64
   URL_Length: int64
@@ -15,6 +16,7 @@ COLUMNS:
   Mouse_Over: int64
   Right_Click: int64
   Web_Forwards: int64
+  Label: int64
 
 TARGET_COLUMN:
   name: Label

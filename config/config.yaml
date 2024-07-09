@@ -4,3 +4,12 @@ data_ingestion:
   root_dir: artifacts/data_ingestion
   local_data_file: Datasets/5.urldata.csv
   destination_folder:  artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  data_path: artifacts/data_ingestion/urldata.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/urldata.csv
