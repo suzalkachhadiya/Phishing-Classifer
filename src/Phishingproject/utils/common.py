@@ -72,6 +72,14 @@ def save_json_file(file_path:Path, data:dict):
         logger.info(f"Error saving JSON file: {e}")
 
 @ensure_annotations
+def save_txt_file(file_path: Path, report: str):
+    try:
+        with open(file_path, "w") as file:
+            file.write(report)
+    except Exception as e:
+        logger.info(f"Error saving txt file: {e}")
+
+@ensure_annotations
 def save_binary_file(file_path:Path, data:dict):
     """
     Save data as a binary file using joblib.dump().

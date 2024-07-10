@@ -31,3 +31,12 @@ class ModelTrainerConfig:
     n_estimators: int
     oob_score: bool
     target_column: int
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+  root_dir: Path
+  test_data_path: Path
+  model_path: Path
+  metric_file_name: Path
+  all_params:dict
+  target_column: str
