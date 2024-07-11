@@ -40,3 +40,7 @@ class ModelEvaluationConfig:
   metric_file_name: Path
   all_params:dict
   target_column: str
+
+@dataclass(frozen=True)
+class PredictionConfig:
+    model_path: Path

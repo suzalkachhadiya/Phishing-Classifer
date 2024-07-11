@@ -12,4 +12,5 @@ joblib
 types-pyYAML
 streamlit
 tk-tools
+python-whois
 -e .

@@ -1,6 +1,6 @@
 from Phishingproject.constants import *
 from Phishingproject.utils.common import create_directories, read_yaml_file
-from Phishingproject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig
+from Phishingproject.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig, PredictionConfig
 
 class ConfigurationManager:
     def __init__(
@@ -96,3 +96,12 @@ class ConfigurationManager:
         )
 
         return model_evaluation_config
+    
+    def get_prediction_config(self) -> PredictionConfig:
+        config = self.config.prediction
+        
+        prediction_config = PredictionConfig(
+            model_path = config.model_path  
+        )
+
+        return prediction_config
